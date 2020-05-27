@@ -1,0 +1,19 @@
+function sort_subtract(num){
+var arrnum = [];
+var ynum = num;
+var xnum = num;
+while(!(num == 0)){
+var x = num%10
+arrnum.push(x)
+num= num / 10
+num = Math.trunc(num);
+
+}
+var x = arrnum.sort((a,b)=>b-a);
+var numx  = x.join("");
+var x = arrnum.sort((a,b)=>a-b);
+var numy  = x.join("");
+//x.join("") - y.join("");
+return numx - numy;
+
+}
